@@ -35,18 +35,6 @@ export default function UserHeader() {
                 } lg:hover:bg-transparent lg:border-0 hover:text-red-700 `
               }
             >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to='/features'
-              className={({ isActive }) =>
-                `no-underline block py-2 pr-4 pl-3 duration-200 ${
-                  isActive ? "text-red-700" : "text-white"
-                } lg:hover:bg-transparent lg:border-0 hover:text-red-700 `
-              }
-            >
               Features
             </NavLink>
           </li>

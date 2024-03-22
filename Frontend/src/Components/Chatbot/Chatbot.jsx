@@ -29,6 +29,7 @@ function Chatbot() {
             {/* Add */}
             <div className="hidden group-hover:flex flex-col items-center bg-white text-black translate-x-48 -translate-y-24 rounded-lg px-3 py-4 w-56 shadow-lg">
                 <p className="text-2xl flex hover:bg-gray-200 hover:cursor-pointer px-1 py-2 rounded-lg"><AiOutlineUpload className="mr-2 text-3xl"/> Upload PDF</p>
+                <p className="text-2xl flex hover:bg-gray-200 hover:cursor-pointer px-1 py-2 rounded-lg">OCR</p>
                 <p className="group text-2xl flex mt-2 hover:bg-gray-200 hover:cursor-pointer px-1 py-2 rounded-lg"><AiOutlineLink className="mr-2 text-3xl"/>Paste PDF URL</p>
                 <div className="hidden group-hover:flex flex-col w-96 bg-white translate-x-50 px-2 py-3">
                     <p className="text-2xl font-bold">Paste PDF URL</p>

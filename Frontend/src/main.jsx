@@ -14,10 +14,12 @@ import Profile from './Components/Profile/Profile.jsx'
 import ContactUs from './Components/About/Contact.jsx'
 import Chatbot from './Components/Chatbot/Chatbot.jsx'
 import Search from './Components/Search/Search.jsx'
+import { FileUpload } from './FileUpload.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<App/>}>
+        <Route path='file'element={<FileUpload/>}/>
         <Route path=''element={<Home/>}/>
         <Route path='about'element={<About/>}/>
         <Route path='login' element={<Login/>}/>
