@@ -30,7 +30,7 @@ export default function Footer() {
                             <ul className="text-white font- pl-0">
                                 <li className="mb-4">
                                     <a
-                                        href="https://github.com/KartikGupta2004/Inheritance-Proj-Patient-Database"
+                                        href="https://github.com/lbhnsh/kanoon-ke-rakshak"
                                         className="no-underline text-white hover:text-black hover:underline"
                                         target="_blank"
                                         rel="noreferrer"

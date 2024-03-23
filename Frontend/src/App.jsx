@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.css'
 import UserHeader from './Components/Header/UserHeader.jsx'
-import AdminHeader from './Components/Header/AdminHeader.jsx'
 import Footer from './Components/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 import SideBar from "./Components/Sidebar/Sidebar.jsx";
@@ -15,7 +14,7 @@ function App() {
   const {user} = useAuthContext();
   return (
     <>
-      {(!user)?(<UserHeader/>):user.Role==='User'?(<UserHeader/>):(<AdminHeader/>)}
+      <UserHeader/>
       <Media query="(max-width: 1024px)">
       <SideBar>
         <Routes path='/' element={<App/>}>

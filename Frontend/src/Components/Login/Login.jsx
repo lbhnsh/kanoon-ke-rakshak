@@ -5,8 +5,7 @@ import { useLogin } from "../Hooks/useLogin";
 function Login() {
   const [data, setData] = useState({
     email: "",
-    password: "",
-    Role: "user",
+    password: ""
   });
   const [error, setError] = useState(null);
   const { login, isLoading } = useLogin();
@@ -22,17 +21,13 @@ function Login() {
        await login(data);
        setData({
          email: "",
-         password: "",
-         Role: "",
+         password: ""
        });
        navigate("/", { replace: true });
     } catch (err) {
       setError(err);
       console.log("Error: ", err);
     }
-  };
-  const handleOptionClick = (option) => {
-    setData({ ...data, Role: option });
   };
   return (
     <>
