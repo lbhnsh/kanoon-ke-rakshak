@@ -46,27 +46,37 @@ export default function Home() {
       <section className="flex flex-col justify-center items-center bg-black">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center">
       <div className="shadow-lg rounded-3xl overflow-hidden my-12 mr-10 bg-slate-700 h-750">
-        <div className="p-4">
-          <h2 className="text-3xl font-semibold text-white">Legal Chatbot</h2>
-          <p className="mt-2 text-white text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div className="p-4 flex flex-col items-center">
+          <img src="./Images/Img1.png" className="w-36 h-36 bg-white p-3" alt="" />
+          <h2 className="text-3xl mt-3 font-semibold text-white">Legal Chatbot</h2>
+          <p className="mt-3 text-white text-xl">
+Our legal chatbot is an AI-powered tool designed to assist users with legal inquiries, providing information, guidance, and basic legal advice on various topics such as contracts, immigration, or intellectual property.</p>
+          <img src="./Images/img5.jpg" className="mt-5 w-80 h-80" alt="" />
         </div>
       </div>
       <div className="shadow-lg rounded-3xl overflow-hidden my-12 mr-10 bg-slate-700 h-750">
-        <div className="p-4">
-          <h2 className="text-3xl font-semibold text-white">Document Drafter</h2>
-          <p className="mt-2 text-white text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className="p-4 flex flex-col items-center">
+          <img src="./Images/img2.png" className="w-36 h-36 bg-white p-3" alt="" />
+          <h2 className="text-3xl mt-3 font-semibold text-white">Document Drafter</h2>
+          <p className="mt-3 text-white text-xl">Our document drafter automates the creation of legal documents, streamlining processes like contract drafting with templates and customization options. </p>
+          <img src="./Images/img5.jpg" className="mt-5 w-80 h-80" alt="" />
         </div>
       </div>
       <div className="shadow-lg rounded-3xl overflow-hidden my-12 mr-10 bg-slate-700 h-750">
-        <div className="p-4">
-          <h2 className="text-3xl font-semibold text-white">Legal Research</h2>
-          <p className="mt-2 text-white text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className="p-4 flex flex-col items-center">
+          <img src="./Images/img3.png" className="w-36 h-36 bg-white p-3" alt="" />
+          <h2 className="text-3xl mt-3 font-semibold text-white">Legal Research</h2>
+          <p className="mt-3 text-white text-xl">Our Legal research tools leverage AI to analyze vast databases, facilitating efficient retrieval of relevant case law and statutes.</p>
+          <img src="./Images/img5.jpg" className="mt-5 w-80 h-80" alt="" />
         </div>
       </div>
       <div className="shadow-lg rounded-3xl overflow-hidden my-12 mr-10 bg-slate-700 h-750">
-        <div className="p-4">
-          <h2 className="text-3xl font-semibold text-white">Case Analysis</h2>
-          <p className="mt-2 text-white text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className="p-4 flex flex-col items-center">
+          <img src="./Images/img4.png" className="w-36 h-36 bg-white p-3" alt="" />
+          <h2 className="text-3xl mt-3 font-semibold text-white">Case Analysis</h2>
+          <p className="mt-3 text-white text-xl">Our Case analysis software aids lawyers in dissecting legal precedents and outcomes to inform strategic decision-making and argumentation in litigation.
+</p>
+          <img src="./Images/img5.jpg" className="mt-5 w-80 h-80" alt="" />
         </div>
       </div>
     </div>

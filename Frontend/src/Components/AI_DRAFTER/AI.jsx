@@ -1,7 +1,7 @@
 import React from 'react'
 import CardLayout from './CardLayout'
 
-function AI() {
+function Drafter() {
   return (
     <>
     <CardLayout/>
@@ -9,4 +9,4 @@ function AI() {
   )
 }
 
-export default AI
+export default Drafter

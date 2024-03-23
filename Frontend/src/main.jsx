@@ -15,6 +15,7 @@ import Search from './Components/Search/Search.jsx'
 import { FileUpload } from './FileUpload.jsx'
 import Chat from './Components/Chatbot/Chat.jsx'
 import LawGpt from './Components/Chatbot/LawGpt.jsx'
+import Drafter from './Components/AI_DRAFTER/AI.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
         <Route path='contactus' element={<ContactUs/>}/>
         <Route path='file'element={<FileUpload/>}/>
         <Route path='lawgpt'element={<LawGpt/>}/>
+        <Route path='drafter'element={<Drafter/>}/>
     </Route>
   )
 );
