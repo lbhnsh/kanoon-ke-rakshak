@@ -10,13 +10,11 @@ import { AiOutlineLink } from "react-icons/ai";
 import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
 import { CgRemoveR } from "react-icons/cg";
 import { AiOutlineUpload } from "react-icons/ai";
-import { FaRegThumbsUp } from "react-icons/fa";
-import { FaRegThumbsDown } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import FileReader from "../FileReader/FileReader";
+
 function Chatbot() {
-  const [chat, setChat] = useState(false);
-  const onClickChat = () => {
-    setChat(true);
-  };
+  
   return (
     <>
       <div className="flex bg-green-100">
@@ -32,19 +30,15 @@ function Chatbot() {
                 <IoIosAddCircleOutline className="text-4xl" />
                 <p className="text-3xl">Add</p>
                 {/* Add */}
-                <div className="hidden group-hover:flex flex-col items-center bg-white text-black translate-x-48 -translate-y-24 rounded-lg px-3 py-4 w-56 shadow-lg">
-                  <p className="text-2xl flex hover:bg-gray-200 hover:cursor-pointer px-1 py-2 rounded-lg">
-                    <AiOutlineUpload className="mr-2 text-3xl" /> Upload PDF
-                  </p>
-                  <p className="text-2xl flex hover:bg-gray-200 hover:cursor-pointer px-1 py-2 rounded-lg">
-                    OCR
-                  </p>
+                <div className="hidden group-hover:flex flex-col items-center bg-white text-black translate-x-48 -translate-y-24 rounded-lg px-3 py-4 w-fit shadow-lg z-50">
+                    <div>
+                    <FileReader/>
+                    </div>
+                  <div className="flex flex-col w-96 bg-white translate-x-50 px-2 py-3">
                   <p className="group text-2xl flex mt-2 hover:bg-gray-200 hover:cursor-pointer px-1 py-2 rounded-lg">
                     <AiOutlineLink className="mr-2 text-3xl" />
                     Paste PDF URL
                   </p>
-                  <div className="hidden group-hover:flex flex-col w-96 bg-white translate-x-50 px-2 py-3">
-                    <p className="text-2xl font-bold">Paste PDF URL</p>
                     <p className="text-xl mt-2">
                       Kindly paste your URL below, ensuring that it directs to a
                       PDF file.
@@ -70,7 +64,7 @@ function Chatbot() {
                 </div>
             </div> */}
         </section>
-        {!chat && (
+    
           <section className="h-fit w-4/5 ml-4 z-0">
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-7xl font-bold pl-4 pt-4">Project Title</h2>
@@ -121,12 +115,13 @@ function Chatbot() {
                 More
               </p>
               <div className="flex space-x-2 mt-2 font-semibold">
+                <Link to="/chat">
                 <button
                   className="text-lg flex border-2 border-gray-300 px-2 py-1 rounded-lg items-center"
-                  onClick={onClickChat}
                 >
                   <IoChatbubbleEllipsesOutline className="mr-2" /> Chat
                 </button>
+                </Link>
                 <button className="text-lg flex items-center border-2 border-gray-300 px-2 py-1 rounded-lg">
                   <CgRemoveR className="mr-2" /> Remove from Library
                 </button>
@@ -203,34 +198,6 @@ function Chatbot() {
               </div>
             </div>
           </section>
-        )}
-        {chat && (
-          <section className="flex bg-gray-200">
-            <object data="../../Files/AIML_PS.pdf" type="application/pdf" width="100%" height="600px"/>
-            <div className="w-1/2 text-3xl m-10 px-5 py-14 bg-green-200 rounded-xl ">
-              <h2>Summary</h2>
-              {/* Data */}
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Consectetur, maxime inventore quis ipsa nam, numquam deserunt
-                temporibus quos facilis dolores voluptas quibusdam neque aliquid
-                officiis! Mollitia labore qui, suscipit est voluptate sapiente
-                quod. Vitae expedita sunt voluptatibus nihil alias deleniti
-                autem quidem, laudantium sapiente aperiam reprehenderit id quae
-                ipsam? Voluptas placeat quos ex atque, doloribus, numquam beatae
-                eum minus, modi cumque mollitia consectetur delectus tenetur
-                fuga! Ad minus distinctio neque earum harum quia temporibus
-                optio, quam facere quidem fuga quas deleniti voluptatem sunt
-                ullam, laudantium culpa. Quas expedita beatae, nisi ea maxime
-                nemo, fuga eaque fugit suscipit quaerat vel ex.
-              </p>
-              <div className="flex justify-end">
-                <FaRegThumbsUp className="mr-3 text-2xl" />
-                <FaRegThumbsDown className="text-2xl" />
-              </div>
-            </div>
-          </section>
-        )}
       </div>
     </>
   );

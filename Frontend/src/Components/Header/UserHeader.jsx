@@ -7,7 +7,7 @@ export default function UserHeader() {
   const { user } = useAuthContext();
   const { logout } = useLogOut();
   return (
-    <header className='hidden lg:flex bg-slate-700 items-center decoration-0 justify-between text-4xl 1500:text-5xl shadow border-y-2 border-black z-100 p-0 m-0 h-32 w-full'>
+    <header className='hidden lg:flex bg-gray-900 items-center decoration-0 justify-between text-4xl 1500:text-5xl shadow border-y-2 border-black z-100 p-0 m-0 h-32 w-full'>
       <div className='hidden 1500:flex items-center'>
         <img className='ml-6 w-20' src='Assets/Logo.png' alt='' />
       </div>
@@ -24,18 +24,6 @@ export default function UserHeader() {
               }
             >
               Home
-            </NavLink>
-          </li>
-          <li className='hidden 1500:flex'>
-            <NavLink
-              to='/about'
-              className={({ isActive }) =>
-                `no-underline block py-2 pr-4 pl-3 duration-200 ${
-                  isActive ? "text-red-700" : "text-white"
-                } lg:hover:bg-transparent lg:border-0 hover:text-red-700 `
-              }
-            >
-              Features
             </NavLink>
           </li>
           <li>
