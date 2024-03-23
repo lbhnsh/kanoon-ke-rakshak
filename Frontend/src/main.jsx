@@ -14,6 +14,7 @@ import Chatbot from './Components/Chatbot/Chatbot.jsx'
 import Search from './Components/Search/Search.jsx'
 import { FileUpload } from './FileUpload.jsx'
 import Chat from './Components/Chatbot/Chat.jsx'
+import LawGpt from './Components/Chatbot/LawGpt.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,6 +28,7 @@ const router = createBrowserRouter(
         <Route path='privacy policy and terms and conditions' element={<PP_TC/>}/>
         <Route path='contactus' element={<ContactUs/>}/>
         <Route path='file'element={<FileUpload/>}/>
+        <Route path='lawgpt'element={<LawGpt/>}/>
     </Route>
   )
 );
